@@ -1,12 +1,12 @@
-import MainLeft from "@/components/MainLeft";
 import MainRight from "@/components/MainRight";
-import Image from "next/image";
+import Profile from "@/components/Profile";
+import React from "react";
 
-export default function Home() {
+function ProfilePage() {
   return (
     <div className="grid grid-cols-1 lg:grid lg:grid-cols-8">
       <div className="lg:col-span-5">
-        <MainLeft />
+        <Profile />
       </div>
       <div className="hidden lg:inline-flex lg:col-span-3">
         <MainRight />
@@ -14,3 +14,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default ProfilePage;
